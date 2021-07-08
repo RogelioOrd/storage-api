@@ -19,7 +19,6 @@ curl -vq http://localhost:8080/storage/json \
     2>&1 | grep '^<'
 ```
 
-
 If you want to store a json file using, you should send a request as
 
 ```
@@ -32,7 +31,7 @@ Content-Type: application/json
 }
 ```
 
-The curl command should be 
+The curl command should be
 
 ```
 curl -vq http://localhost:8080/storage/json \
