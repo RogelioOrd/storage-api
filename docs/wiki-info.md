@@ -58,10 +58,10 @@ Consulta de informacion
 
 | Path                    | Descripción                                         |
 | ----------------------- | --------------------------------------------------- |
-| /wiki/login             | Sera el archivo encargado de validar el acceso al usuario para permitirle subir informacion |
-| /wiki/profile           | Aqui se desplegra la informacion que el usuario haya publicado |
-| /wiki/query             | Aqui es donde se consultara la informacion subida por su titulo|
-| /wiki/create/data       | Se utiliza para crear notas|
+| /wiki-info/login             | Sera el archivo encargado de validar el acceso al usuario para permitirle subir informacion |
+| /wiki-info/profile           | Aqui se desplegra la informacion que el usuario haya publicado |
+| /wiki-info/query             | Aqui es donde se consultara la informacion subida por su titulo|
+| /wiki-info/create/data       | Se utiliza para crear notas|
 
 
 #Herramientas Utilizadas
