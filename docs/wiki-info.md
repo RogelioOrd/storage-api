@@ -59,10 +59,14 @@ Registro de usuario
 Como ingresar una wiki
 
 {
-    "titulo": "nota de ejemplo",
-    "contenido": "",
-    "bibliografia": ""
-}
+        "publication_id": publication_id,
+        "titulo": titulo,
+	      "autor": autor,
+        "categoria": categoria,
+        "fecha_publicacion": fecha,
+	      "publicacion": info,
+	      "bibliografia": biblografia
+    }
 ```
 
 ## Archivos de funcionamiento
