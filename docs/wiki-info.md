@@ -63,6 +63,11 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
 | /wiki-info/query             | Aqui es donde se consultara la informacion subida por su titulo|
 | /wiki-info/create/data       | Se utiliza para crear notas|
 
+#Creacion de Funciones de almacenamiento
+Funciones simuladas para el funcionamiento
+|        Titulo           | Commit Hash                                         |
+| ----------------------- | --------------------------------------------------- |
+|                         |   |
 
 #Cambios de git
 '''
@@ -73,6 +78,7 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
 17f72c241a48419c00a731ab04746ca5bac0b7b0
   Creacion de Archivos
   creacion de carpetas
+
 '''
 
 
