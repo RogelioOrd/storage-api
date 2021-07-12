@@ -142,6 +142,8 @@ Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con
 
 dc8b0d8f1089150eada0eda61a7141d525c45beb
   -Respuesta de creacion
+24ad4b6feeac11c62a07a987a55a4ef330221f4c
+  -se añadio una tabla de una simulacion de una funcion
 ```
 
 ## Herramientas Utilizadas
