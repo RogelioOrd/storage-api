@@ -46,7 +46,7 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
 -Bibliografia
 ```
 
-##Codigo
+## Codigo
 ```
 Registro de usuario
 {
