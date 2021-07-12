@@ -82,7 +82,7 @@ Como ingresar una wiki
 Funciones simuladas para el funcionamiento
 |        Titulo           | Commit Hash                                         |
 | ----------------------- | --------------------------------------------------- |
-|                         |   |
+|Simulacio de nuevas notas|   1c43e307ebd25418016e98920926665e80179fc9          |
 
 # Rutas Especificas
 Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con Content-Type: application/json.
