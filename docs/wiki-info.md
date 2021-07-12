@@ -74,7 +74,7 @@ Como ingresar una wiki
 | /wiki-info/query             | Aqui es donde se consultara la informacion subida por su titulo|
 | /wiki-info/create/data       | Se utiliza para crear notas|
 
-#Creacion de Funciones de almacenamiento
+# Creacion de Funciones de almacenamiento
 Funciones simuladas para el funcionamiento
 |        Titulo           | Commit Hash                                         |
 | ----------------------- | --------------------------------------------------- |
@@ -89,29 +89,32 @@ Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con
 
 ## Interfaz web
 -Pagina principal
-  -Esta sera la interfaz principal desde la que se podra acceder a la demas informacion mediante el buscador
-  -Incluira una seccion de diferentes temas en caso de querer buscar en cierta categoria Especifica
-  -Por ultimo se mostraria alguna imagen o logo relacionada
+-Esta sera la interfaz principal desde la que se podra acceder a la demas informacion mediante el buscador
+-Incluira una seccion de diferentes temas en caso de querer buscar en cierta categoria Especifica
+-Por ultimo se mostraria alguna imagen o logo relacionada
+
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-
 info-0002-Home%20Page.PNG" width="550">  
 
 -Vista previa de una publicacion
-    -Aqui se rellenara la informacion que se desee agregar o publicar
-    -Mostrara una seccion donde se podra acceder a la bibliografia
-    -Se podra ver la fecha de publicacion
-    -Se agrargara el nombre del author
+-Aqui se rellenara la informacion que se desee agregar o publicar
+-Mostrara una seccion donde se podra acceder a la bibliografia
+-Se podra ver la fecha de publicacion
+-Se agrargara el nombre del author
+
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0003-Publication%20Preview.PNG" width="550">  
 
 -Publication
-  -Aqui se puede ver principalmente la publicacion que se busco
-  -Asi mismo se añadira un enlace al perfil del autor para buscar mas de sus publicaciones
-  -Se tendra una barra de buscqueda para poder cambiar de Informacion
+-Aqui se puede ver principalmente la publicacion que se busco
+-Asi mismo se añadira un enlace al perfil del autor para buscar mas de sus publicaciones
+-Se tendra una barra de buscqueda para poder cambiar de Informacion
+
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0004-Publication.PNG" width="550">
 
 -Perfil del Autor
-  -Se tendra acceso a las publicaciones del autor
-  -Se tendra tambien la barra de busqueda
-  -Si la persona se encuentra en su perfil tendra permisos de editar
+-Se tendra acceso a las publicaciones del autor
+-Se tendra tambien la barra de busqueda
+-Si la persona se encuentra en su perfil tendra permisos de editar
 
   <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0001-UserProfile.PNG" width="550">
 
