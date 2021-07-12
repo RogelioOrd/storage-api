@@ -20,10 +20,10 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
 
 ## Aspecto
 ```
-* a90g0 Se crearon las carpetas con los archivos del proyecto
-* 45f23 Se crean funciones para interactuar con el proyecto
-* ah20f Se Implementaron consultas para interactuar con el servidor por rutas `http`
-* 365b0 Se implementaron restricciones a los usuarios
+- a90g0 Se crearon las carpetas con los archivos del proyecto
+- 45f23 Se crean funciones para interactuar con el proyecto
+- ah20f Se Implementaron consultas para interactuar con el servidor por rutas `http`
+- 365b0 Se implementaron restricciones a los usuarios
 ```
 
 ## Admin API
