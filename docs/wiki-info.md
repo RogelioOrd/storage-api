@@ -81,6 +81,7 @@ Funciones simuladas para el funcionamiento
 |                         |   |
 
 # Rutas Especificas
+Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con Content-Type: application/json.
 |        Titulo           | Commit Hash                                         |
 | ----------------------- | --------------------------------------------------- |
 |Respuesta de creacion    |dc8b0d8f1089150eada0eda61a7141d525c45beb             |
