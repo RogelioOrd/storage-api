@@ -81,6 +81,10 @@ Funciones simuladas para el funcionamiento
 |                         |   |
 
 # Rutas Especificas
+|        Titulo           | Commit Hash                                         |
+| ----------------------- | --------------------------------------------------- |
+|Respuesta de creacion    |dc8b0d8f1089150eada0eda61a7141d525c45beb             |
+
 
 ## Interfaz web
 -Pagina principal
@@ -128,6 +132,9 @@ info-0002-Home%20Page.PNG" width="550">
 2e6ba9a3127933291f598ea7d24ab15edcb059a6
   -Se añadieron los mock ups al documento
   -Se les añadio descripcion a los mock ups
+
+dc8b0d8f1089150eada0eda61a7141d525c45beb
+  -Respuesta de creacion
 ```
 
 ## Herramientas Utilizadas
