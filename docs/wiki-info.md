@@ -46,17 +46,17 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
 -Bibliografia
 ```
 
-
-## Registro de usuario
+##Codigo
 ```
+Registro de usuario
 {
   "ID" : "",
    "username" : "",
    "Fecha de publicacion" : "",
    "Edad" :"",
    "Email" : "" }
-'''
-## Como ingresar una wiki
+
+Como ingresar una wiki
 
 {
     "titulo": "nota de ejemplo",
