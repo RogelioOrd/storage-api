@@ -93,8 +93,7 @@ Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con
 -Incluira una seccion de diferentes temas en caso de querer buscar en cierta categoria Especifica
 -Por ultimo se mostraria alguna imagen o logo relacionada
 
-<img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-
-info-0002-Home%20Page.PNG" width="550">  
+<img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0002-Home%20Page.PNG" width="550">  
 
 -Vista previa de una publicacion
 -Aqui se rellenara la informacion que se desee agregar o publicar
