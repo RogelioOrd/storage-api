@@ -38,14 +38,17 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
 -Por autor
 
 ## Estructura del API
+
+```
 -Titulo
 -Autor
 -Contenido
 -Bibliografia
+```
 
 
 ## Registro de usuario
-'''
+```
 {
   "ID" : "",
    "username" : "",
@@ -53,15 +56,16 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
    "Edad" :"",
    "Email" : "" }
 '''
-
 ## Como ingresar una wiki
-'''
+```
+
+```
 {
     "titulo": "nota de ejemplo",
     "contenido": "",
     "bibliografia": ""
 }
-'''
+```
 
 ## Archivos de funcionamiento
 
@@ -105,11 +109,13 @@ info-0002-Home%20Page.PNG" width="550">
   -Se tendra acceso a las publicaciones del autor
   -Se tendra tambien la barra de busqueda
   -Si la persona se encuentra en su perfil tendra permisos de editar
+
   <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0001-UserProfile.PNG" width="550">
 
 
 # Cambios de git
-'''
+
+```
 17f72c241a48419c00a731ab04746ca5bac0b7b0
   -Update de Archivos
   -Upload de la primer version del md
@@ -124,8 +130,7 @@ info-0002-Home%20Page.PNG" width="550">
 2e6ba9a3127933291f598ea7d24ab15edcb059a6
   -Se añadieron los mock ups al documento
   -Se les añadio descripcion a los mock ups
-'''
-
+```
 
 ## Herramientas Utilizadas
 * [Python](https://www.python.org)
