@@ -57,9 +57,7 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
    "Email" : "" }
 '''
 ## Como ingresar una wiki
-```
 
-```
 {
     "titulo": "nota de ejemplo",
     "contenido": "",
