@@ -44,6 +44,8 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
 ```
 -Titulo
 -Autor
+-Categoria
+-Fecha
 -Contenido
 -Bibliografia
 ```
