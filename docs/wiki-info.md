@@ -14,9 +14,9 @@ para poder recopilar informacion de distintas fuentes y que necesitara bibliogra
 -El usuario debera iniciar sesion o registrarse ya sea el caso para poder utilizar la pagina y de esa manera tener acceso al subir informacion que deberea ser comprobada comparando con si bibliografia respectiva o en caso de que esta falte no se podra subir la informacion.
 
 ## usuario
--Registro: nombre, correo electronico.
--Poder consultar usarios y wikis.
--Se requerira que para que un usuario pueda consultar cierta informacion debera ingresar una cuenta de usuario en dodnde podra subir informacion que requerira una bibliografia o mas informacion o muestras de la veracidad que respalden para poder ser aporvada.
+* Registro: nombre, correo electronico.
+* Poder consultar usarios y wikis.
+* Se requerira que para que un usuario pueda consultar cierta informacion debera ingresar una cuenta de usuario en dodnde podra subir informacion que requerira una bibliografia o mas informacion o muestras de la veracidad que respalden para poder ser aporvada.
 
 ## Aspecto
 ```
