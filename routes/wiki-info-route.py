@@ -1,8 +1,9 @@
 from json import dumps as json_dumps
 from modules.auth import validate_token, auth_required
 import bottle
+from modules.bottles import BottleJson
 
-app = bottle.Bottle()
+app = BottleJson()
 
 @app.post("/wiki-info/login")
 def store_record(*args, **kwargs):

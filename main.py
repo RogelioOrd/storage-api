@@ -11,11 +11,13 @@ import datetime
 import bottle
 import routes.auth
 import routes.storage
+import routes.wikiinforoute
 import models.base
 
 app = bottle.Bottle()
 
 app.mount("/auth", routes.auth.app)
+app.mount("/wikiinforoute", routes.wikiinforoute.app)
 app.mount("/storage", routes.storage.app)
 
 
