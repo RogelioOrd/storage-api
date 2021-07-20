@@ -8,7 +8,7 @@ service.
 
 import sys
 import datetime
-import bottles
+import bottle
 import routes.auth
 import routes.storage
 import models.base
