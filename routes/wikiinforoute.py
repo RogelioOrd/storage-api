@@ -11,6 +11,13 @@ def store_record(*args, **kwargs):
     bottle.response.content_type = "application/json"
     return dict(code= 501, message = "Bad Request ")
 
+@app.get("/")
+def index():
+    payload = bottle.request.query_storage
+    print(bottle.request.query_string)
+    print(payload.dict)
+    raise bottle.HTTPError(501, 'Error')
+
 @app.get("/wiki-info/profile")
 def get_all_info(*args, **kwargs):
     bottle.response.status = 501
