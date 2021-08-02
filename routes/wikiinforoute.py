@@ -1,3 +1,4 @@
+import datetime as dt
 import bottle
 from bottle import route, run, post, request
 from modules.bottles import BottleJson
@@ -5,23 +6,26 @@ from modules.wikiinfo import add_publi
 
 
 app = BottleJson()
-
-@app.get("/")
-@app.get("/<name>")
-@app.get("/<name>/<age:int>")
-def index(name="mariano", age=10):
-    payload = bottle.request.query_storage
-    print(name)
-    print(bottle.request.query_string)
-    print(payload.dict)
-    print(name, age)
-    raise bottle.HTTPError(501, 'Error')
-
-@app.post("/wiki-info/login")
-def store_record(*args, **kwargs):
-    bottle.response.status = 501
-    bottle.response.content_type = "application/json"
-    return dict(code= 501, message = "Bad Request ")
+#curl http://localhost:8080/url_messa/store  -X POST -H 'Content-Type: application/json'  -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "correo" : "tucorreofake@correo.com"}'
+## Add a new user
+@app.post("/store")
+def store(*args, **kwargs):
+    payload = bottle.request.json
+    print(payload)
+    try:
+        id = str(payload['id'])
+        username = str(payload['username'])
+        password = str(payload['password'])
+        fecha = dt.date.fromisoformat(payload['fecha'])
+        email = str(payload['email'])
+        print("Datos Aceptados")
+        respuesta = add_user(**payload)
+        print(respuesta)
+        print("Done")
+    except:
+        print("Datos incorrectos")
+        raise bottle.HTTPError(405, "datos invalidos")
+    raise bottle.HTTPError(201, respuesta)
 
 @app.get("/wiki-info/profile")
 def get_all_info(*args, **kwargs):
