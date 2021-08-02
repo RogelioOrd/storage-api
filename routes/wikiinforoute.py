@@ -1,4 +1,8 @@
+import bottle
+from bottle import route, run, post, request
 from modules.bottles import BottleJson
+from modules.wikiinfo import add_publi
+
 
 app = BottleJson()
 
