@@ -34,5 +34,5 @@ def add_publi(publication_id, titulo,autor, categoria, fecha_publicacion, public
     news.append(pub)
     return json.dumps(pub)
 
-def get_publi()
-    return print(publi)
+#def get_publi()
+#    return print(publi)
