@@ -7,7 +7,7 @@ from modules.wikiinfo import add_publi
 
 app = BottleJson()
 
-#curl http://localhost:8080/url_messa/store  -X POST -H 'Content-Type: application/json'  -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "correo" : "tucorreofake@correo.com"}'
+#curl http://localhost:8080/  -X POST -H 'Content-Type: application/json'  -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "correo" : "tucorreofake@correo.com"}'
 ## Add a new user
 @app.post("/store")
 def store(*args, **kwargs):
