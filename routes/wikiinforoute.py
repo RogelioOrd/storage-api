@@ -6,6 +6,7 @@ from modules.wikiinfo import add_publi
 
 
 app = BottleJson()
+
 #curl http://localhost:8080/url_messa/store  -X POST -H 'Content-Type: application/json'  -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "correo" : "tucorreofake@correo.com"}'
 ## Add a new user
 @app.post("/store")
@@ -21,7 +22,7 @@ def store(*args, **kwargs):
         print("Datos Aceptados")
         respuesta = add_user(**payload)
         print(respuesta)
-        print("Done")
+        print("Datos Correctos")
     except:
         print("Datos incorrectos")
         raise bottle.HTTPError(405, "datos invalidos")

@@ -18,6 +18,7 @@ app = bottle.Bottle()
 
 app.mount("/auth", routes.auth.app)
 app.mount("/wikiinforoute", routes.wikiinforoute.app)
+app.mount("/store ", routes.wikiinforoute.app)
 app.mount("/storage", routes.storage.app)
 
 
