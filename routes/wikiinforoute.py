@@ -7,10 +7,18 @@ from modules.wikiinfo import add_publi
 
 app = BottleJson()
 
-#curl http://localhost:8080/  -X POST -H 'Content-Type: application/json'  -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "correo" : "tucorreofake@correo.com"}'
-## Add a new user
+
 @app.post("/store")
 def store(*args, **kwargs):
+    '''Add a new user
+    Para probar esta rutauno puede ejecutar el siguiente comando
+
+        curl http://localhost:8080/wikiinfo/store \
+            -X POST \
+            -H 'Content-Type: application/json' \
+            -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "correo" : "tucorreofake@correo.com"}'
+
+    '''
     payload = bottle.request.json
     print(payload)
     try:
