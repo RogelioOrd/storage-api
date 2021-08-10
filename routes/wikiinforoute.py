@@ -16,7 +16,7 @@ def store(*args, **kwargs):
         curl http://localhost:8080/wikiinfo/store \
             -X POST \
             -H 'Content-Type: application/json' \
-            -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "correo" : "tucorreofake@correo.com"}'
+            -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "email" : "tucorreofake@correo.com"}'
 
     '''
     payload = bottle.request.json
