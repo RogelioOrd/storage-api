@@ -36,3 +36,34 @@ def add_publi(publication_id, titulo,autor, categoria, fecha_publicacion, public
 
 #def get_publi()
 #    return print(publi)
+
+
+
+def add_user(id = None, username = None, password = None, fecha = None, email = None):
+
+    print("Datos del usuario")
+    print(id, username, password, fecha, email)
+    print("Capturado")
+
+
+    data_almacen = {
+        "id": id,
+        "username": username,
+        "password": password,
+        "fecha": fecha,
+        "email": email,
+    }
+    nombre_archivo = f"{username}-{id}-{password}-{fecha}-{email}.json"
+    datos_usuario = store_string(
+        "user/users",
+        nombre_archivo,
+        json.dumps(data_almacen)
+    )
+    return datos_usuario
+
+def get_user(users=None):
+    query_result = query_storage(
+        "user/users",
+    )
+    if users is None:
+        return query_result["content"]
