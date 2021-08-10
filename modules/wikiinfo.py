@@ -38,7 +38,17 @@ def add_publi(publication_id, titulo,autor, categoria, fecha_publicacion, public
 #    return print(publi)
 
 
+"""
+    Funcion para generar un nuevo usuario
+    recibe los argumentos
+     - id, es una cadena de texto compuesta por el nombre de la nota y la fecha de creacion
+     - username, una cadena de texto que corresponda al nombre de usuario.
+     - password, una cadena de texto que corresponda a la contraseña.
+     - fecha, cadena de texto correspondiente a la fecha en que se publico.
+     - email, una cadena de texto en la cual se hace referenacia al correo del usuario.
 
+    La fecha de creacion de agregara automaticamente, al igual que el identificador correspondiente.
+"""
 def add_user(id = None, username = None, password = None, fecha = None, email = None):
 
     print("Datos del usuario")
