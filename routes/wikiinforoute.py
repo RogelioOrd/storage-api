@@ -2,7 +2,7 @@ import datetime as dt
 import bottle
 from bottle import route, run, post, request
 from modules.bottles import BottleJson
-from modules.wikiinfo import add_publi, add_user
+from modules.wikiinfo import *
 
 
 app = BottleJson()
@@ -16,7 +16,7 @@ def store(*args, **kwargs):
         curl http://localhost:8080/wikiinfo/store \
             -X POST \
             -H 'Content-Type: application/json' \
-            -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "fecha":"2021-08-01" , "email" : "tucorreofake@correo.com"}'
+            -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "mail" : "tucorreofake@correo.com"}'
 
     '''
     payload = bottle.request.json
@@ -25,14 +25,14 @@ def store(*args, **kwargs):
         id = str(payload['id'])
         username = str(payload['username'])
         password = str(payload['password'])
-        email = str(payload['email'])
+        mail = str(payload['mail'])
         print("Datos Aceptados")
         respuesta = add_user(**payload)
         print(respuesta)
         print("Datos Correctos")
     except:
         print("Datos incorrectos")
-        raise bottle.HTTPError(405, "datos invalidos")
+        raise bottle.HTTPError(400, "datos invalidos")
     raise bottle.HTTPError(201, respuesta)
 
 @app.get("/wiki-info/profile")

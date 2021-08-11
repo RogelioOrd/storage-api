@@ -49,7 +49,7 @@ def add_publi(publication_id, titulo,autor, categoria, fecha_publicacion, public
 
     La fecha de creacion de agregara automaticamente, al igual que el identificador correspondiente.
 """
-def add_user(id = None, username = None, password = None, email = None):
+def add_user(id = None, username = None, password = None, mail = None):
 
     print("Datos del usuario")
     print(id, username, password, email)
@@ -60,7 +60,7 @@ def add_user(id = None, username = None, password = None, email = None):
         "id": id,
         "username": username,
         "password": password,
-        "email": email,
+        "mail": mail,
     }
     nombre_archivo = f"{username}-{id}-{email}.json"
     datos_usuario = store_string(
