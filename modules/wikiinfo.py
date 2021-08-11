@@ -56,7 +56,7 @@ def add_user(id = None, username = None, password = None, mail = None):
     print("Capturado")
 
 
-    data_almacen = {
+    almacenable = {
         "id": id,
         "username": username,
         "password": password,
@@ -66,7 +66,7 @@ def add_user(id = None, username = None, password = None, mail = None):
     datos_usuario = store_string(
         "user/users",
         nombre_archivo,
-        json.dumps(data_almacen)
+        json.dumps(almacenable)
     )
     return datos_usuario
 
