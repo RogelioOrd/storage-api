@@ -2,7 +2,7 @@ import datetime as dt
 import bottle
 from bottle import route, run, post, request
 from modules.bottles import BottleJson
-from modules.wikiinfo import add_publi
+from modules.wikiinfo import add_publi, add_user
 
 
 app = BottleJson()
