@@ -25,7 +25,6 @@ def store(*args, **kwargs):
         id = str(payload['id'])
         username = str(payload['username'])
         password = str(payload['password'])
-        fecha = dt.date.fromisoformat(payload['fecha'])
         email = str(payload['email'])
         print("Datos Aceptados")
         respuesta = add_user(**payload)
