@@ -59,7 +59,7 @@ def add_publi(publication_id, titulo,autor, categoria, fecha_publicacion, public
 def add_user(id = None, username = None, password = None, mail = None):
 
     print("Datos del usuario")
-    print(id, username, password, email)
+    print(id, username, password, mail)
     print("Capturado")
 
 
