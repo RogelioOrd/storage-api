@@ -3,7 +3,14 @@ import hashlib
 import models.auth
 from bottle import response, request
 import jwt
-
+import json
+import datetime as dt
+from os import environ
+from pathlib import Path
+from modules.storage import (
+    store_string, store_bytes,
+    query_storage, get_storage_file
+)
 """
     Funcion para generar una nueva wiki
     recibe los argumentos
