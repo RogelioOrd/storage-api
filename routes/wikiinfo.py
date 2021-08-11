@@ -13,7 +13,7 @@ def store(*args, **kwargs):
     '''Add a new user
     Para probar esta rutauno puede ejecutar el siguiente comando
 
-        curl http://localhost:8080/wikiinfo/store \
+        curl http://localhost:8081/wikiinfo/store \
             -X POST \
             -H 'Content-Type: application/json' \
             -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "mail" : "tucorreofake@correo.com"}'
