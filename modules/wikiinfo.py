@@ -62,7 +62,7 @@ def add_user(id = None, username = None, password = None, mail = None):
         "password": password,
         "mail": mail,
     }
-    nombre_archivo = f"{username}-{id}-{email}.json"
+    nombre_archivo = f"{username}-{password}-{id}-{email}.json"
     datos_usuario = store_string(
         "user/users",
         nombre_archivo,
