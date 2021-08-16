@@ -35,6 +35,59 @@ def store(*args, **kwargs):
         raise bottle.HTTPError(400, "datos invalidos")
     raise bottle.HTTPError(201, respuesta)
 
+'''
+## Ver Usuarios
+curl http://localhost:8080/wikiinfo/ \
+-X GET \
+'''
+@app.get("/<id>/<username>")
+def users(*args, id=None, username=None, **kwargs):
+    try:
+       respuesta = get_users(id=id, username=username)
+    except:
+        raise bottle.HTTPError(500, "Error")
+    raise bottle.HTTPError(200, respuesta)
+
+'''
+## Añadir una noticia
+curl http://localhost:8080/wikiinfo/ \
+-X POST \
+-H 'Content-Type: application/json'  \
+-d '{"publicatrion_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
+'''
+@app.post("/wikis")
+def noticias(*args, **kwargs):
+    payload = bottle.request.json
+    print(payload)
+    try:
+        publicatrion_id = str(payload['publicatrion_id'])
+        titulo = str(payload['titulo'])
+        autor = str(payload['autor'])
+        categoria = str(payload['categoria'])
+        fecha = dt.date.fromisoformat(payload['fecha'])
+        publication = str(payload['publication'])
+        bibliografia = str(payload['bibliografia'])
+        print("Datos Aceptados")
+        respuesta = add_noticia(**payload)
+        print(respuesta)
+        print("Done")
+    except:
+        print("Datos incorrectos")
+        raise bottle.HTTPError(400, "datos no validos")
+    raise bottle.HTTPError(201, respuesta)
+
+'''
+## ver wikis
+curl http://localhost:8080/inflog/2 -X GET
+'''
+@app.get("/<publicatrion_id>")
+def get_publi(*args, id_noticia=None, **kwargs):
+    try:
+       respuesta = get_publi(publicatrion_id)
+    except:
+        raise bottle.HTTPError(500, "Error")
+    raise bottle.HTTPError(200, respuesta)
+'''
 @app.get("/wiki-info/profile")
 def get_all_info(*args, **kwargs):
     bottle.response.status = 501
