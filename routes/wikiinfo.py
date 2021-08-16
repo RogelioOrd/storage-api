@@ -37,7 +37,7 @@ def store(*args, **kwargs):
 
 '''
 ## Ver Usuarios
-curl http://localhost:8080/wikiinfo/store \
+curl http://localhost:8081/wikiinfo/store \
 -X GET \
 '''
 @app.get("/<id>/<username>")
@@ -50,7 +50,7 @@ def users(*args, id=None, username=None, **kwargs):
 
 '''
 ## Añadir una Wiki
-curl http://localhost:8080/wikiinfo/store \
+curl http://localhost:8081/wikiinfo/store \
 -X POST \
 -H 'Content-Type: application/json'  \
 -d '{"publicatrion_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
@@ -78,7 +78,7 @@ def noticias(*args, **kwargs):
 
 '''
 ## ver wikis
-curl http://localhost:8080/inflog/2 \
+curl http://localhost:8081/wikiinfo/2 \
 -X GET \
 '''
 @app.get("/<publication_id>")
