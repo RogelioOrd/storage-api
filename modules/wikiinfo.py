@@ -43,7 +43,17 @@ def add_publi(publication_id, titulo,autor, categoria, fecha_publicacion, public
 
 #def get_publi()
 #    return print(publi)
-
+def get_publi(publication_id = None):
+    query_result = query_storage(
+        "wiki/wikis",
+    )
+    if publication_id is not None:
+        return [
+           i
+           for i in query_result["content"]
+           if id_noticia in i
+        ]
+        print("Done")
 
 """
     Funcion para generar un nuevo usuario

@@ -60,7 +60,7 @@ def noticias(*args, **kwargs):
     payload = bottle.request.json
     print(payload)
     try:
-        publicatrion_id = str(payload['publicatrion_id'])
+        publication_id = str(payload['publication_id'])
         titulo = str(payload['titulo'])
         autor = str(payload['autor'])
         categoria = str(payload['categoria'])
@@ -80,14 +80,14 @@ def noticias(*args, **kwargs):
 ## ver wikis
 curl http://localhost:8080/inflog/2 -X GET
 '''
-@app.get("/<publicatrion_id>")
+@app.get("/<publication_id>")
 def get_publi(*args, id_noticia=None, **kwargs):
     try:
        respuesta = get_publi(publicatrion_id)
     except:
         raise bottle.HTTPError(500, "Error")
     raise bottle.HTTPError(200, respuesta)
-'''
+
 @app.get("/wiki-info/profile")
 def get_all_info(*args, **kwargs):
     bottle.response.status = 501
