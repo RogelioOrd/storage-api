@@ -37,7 +37,7 @@ def store(*args, **kwargs):
 
 '''
 ## Ver Usuarios
-curl http://localhost:8080/wikiinfo/ \
+curl http://localhost:8080/wikiinfo/store \
 -X GET \
 '''
 @app.get("/<id>/<username>")
@@ -49,8 +49,8 @@ def users(*args, id=None, username=None, **kwargs):
     raise bottle.HTTPError(200, respuesta)
 
 '''
-## Añadir una noticia
-curl http://localhost:8080/wikiinfo/ \
+## Añadir una Wiki
+curl http://localhost:8080/wikiinfo/store \
 -X POST \
 -H 'Content-Type: application/json'  \
 -d '{"publicatrion_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
@@ -78,7 +78,8 @@ def noticias(*args, **kwargs):
 
 '''
 ## ver wikis
-curl http://localhost:8080/inflog/2 -X GET
+curl http://localhost:8080/inflog/2 \
+-X GET \
 '''
 @app.get("/<publication_id>")
 def get_publi(*args, id_noticia=None, **kwargs):
