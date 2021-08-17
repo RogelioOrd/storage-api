@@ -64,7 +64,6 @@ def noticias(*args, **kwargs):
         titulo = str(payload['titulo'])
         autor = str(payload['autor'])
         categoria = str(payload['categoria'])
-        fecha = dt.date.fromisoformat(payload['fecha'])
         publication = str(payload['publication'])
         bibliografia = str(payload['bibliografia'])
         print("Datos Aceptados")
