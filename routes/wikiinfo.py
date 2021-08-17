@@ -56,7 +56,7 @@ curl http://localhost:8081/wikiinfo/store \
 -d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
 '''
 @app.post("/wikiinfo")
-def noticias(*args, **kwargs):
+def publication(*args, **kwargs):
     payload = bottle.request.json
     print(payload)
     try:
