@@ -53,9 +53,9 @@ def users(*args, id=None, username=None, **kwargs):
 curl http://localhost:8081/wikiinfo/store \
 -X POST \
 -H 'Content-Type: application/json'  \
--d '{"publicatrion_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
+-d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
 '''
-@app.post("/wikis")
+@app.post("/wikiinfo")
 def noticias(*args, **kwargs):
     payload = bottle.request.json
     print(payload)
