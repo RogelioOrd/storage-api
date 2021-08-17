@@ -89,6 +89,7 @@ def get_publi(*args, id_noticia=None, **kwargs):
         raise bottle.HTTPError(500, "Error")
     raise bottle.HTTPError(200, respuesta)
 
+###################################################################
 @app.get("/wiki-info/profile")
 def get_all_info(*args, **kwargs):
     bottle.response.status = 501
