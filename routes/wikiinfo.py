@@ -37,7 +37,7 @@ def store(*args, **kwargs):
 
 '''
 ## Ver Usuarios
-curl http://localhost:8081/wikiinfo/store \
+curl http://localhost:8081/wikiinfo/store/1/rogelio \
 -X GET \
 '''
 @app.get("/<id>/<username>")
@@ -78,7 +78,7 @@ def noticias(*args, **kwargs):
 
 '''
 ## ver wikis
-curl http://localhost:8081/wikiinfo/2 \
+curl http://localhost:8081/wikiinfo/1 \
 -X GET \
 '''
 @app.get("/<publication_id>")
