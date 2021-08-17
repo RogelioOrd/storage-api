@@ -3,7 +3,10 @@ import bottle
 from bottle import route, run, post, request
 from modules.bottles import BottleJson
 from modules.wikiinfo import *
-
+from modules.storage import (
+    store_string, store_bytes,
+    query_storage, get_storage_file
+)
 
 app = BottleJson()
 
@@ -55,7 +58,7 @@ curl http://localhost:8081/wikiinfo/store \
 -H 'Content-Type: application/json'  \
 -d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
 '''
-@app.post("/wikiinfo")
+@app.post("/wikiinfo/storage")
 def publication(*args, **kwargs):
     payload = bottle.request.json
     print(payload)

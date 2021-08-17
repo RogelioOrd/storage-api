@@ -37,8 +37,13 @@ def add_publi(publication_id = None, titulo = None, autor = None, categoria = No
 	    "publicacion": publicacion,
 	    "bibliografia": biblografia
     }
-    news.append(pub)
-    return json.dumps(pub)
+    nombre_de_archivo  = f"{publication_id}-{titulo}-{autor}.json"
+    datos = store_string(
+        "publi/publicaciones",
+        nombre_de_archivo,
+        json.dumps(almacenable)
+    )
+    return datos
 
 #def get_publi()
 #    return print(publi)
