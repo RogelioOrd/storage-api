@@ -83,7 +83,7 @@ curl http://localhost:8081/wikiinfo/1 \
 @app.get("/<publication_id>")
 def get_publi(*args, id_noticia=None, **kwargs):
     try:
-       respuesta = get_publi(publicatrion_id)
+       respuesta = get_publi(publication_id)
     except:
         raise bottle.HTTPError(500, "Error")
     raise bottle.HTTPError(200, respuesta)
