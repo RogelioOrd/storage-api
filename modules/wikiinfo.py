@@ -28,13 +28,13 @@ from modules.storage import (
 """
 
 publi =[]
-def add_publi(publication_id, titulo,autor, categoria, publicacion, bibliografia):
+def add_publi(publication_id = None, titulo = None, autor = None, categoria = None, publicacion = None, bibliografia =None):
     pub = {
         "publication_id": publication_id,
         "titulo": titulo,
 	    "autor": autor,
         "categoria": categoria,
-	    "publicacion": info,
+	    "publicacion": publicacion,
 	    "bibliografia": biblografia
     }
     news.append(pub)
