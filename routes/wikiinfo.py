@@ -67,7 +67,7 @@ def publication(*args, **kwargs):
         publication = str(payload['publication'])
         bibliografia = str(payload['bibliografia'])
         print("Datos Aceptados")
-        respuesta = add_noticia(**payload)
+        respuesta = add_publi(**payload)
         print(respuesta)
         print("Done")
     except:
