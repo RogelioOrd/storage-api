@@ -29,7 +29,7 @@ from modules.storage import (
 
 publi =[]
 def add_publi(publication_id = None, titulo = None, autor = None, categoria = None, publicacion = None, bibliografia =None):
-    pub = {
+    almacenable = {
         "publication_id": publication_id,
         "titulo": titulo,
 	    "autor": autor,
@@ -41,7 +41,7 @@ def add_publi(publication_id = None, titulo = None, autor = None, categoria = No
     datos = store_string(
         "publi/publicaciones",
         nombre_de_archivo,
-        json.dumps(pub)
+        json.dumps(almacenable)
     )
     return datos
 
