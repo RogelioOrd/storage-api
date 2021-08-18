@@ -27,7 +27,7 @@ from modules.storage import (
     Esta funcion regresara un diccionario con el id, titulo, autor, categoria, fecha, publicacion y bibliografia.
 """
 
-publi =[]
+
 def add_publi(publication_id = None, titulo = None, autor = None, categoria = None, publicacion = None, bibliografia =None):
     almacenable = {
         "publication_id": publication_id,
