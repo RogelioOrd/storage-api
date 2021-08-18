@@ -41,7 +41,7 @@ def add_publi(publication_id = None, titulo = None, autor = None, categoria = No
     datos = store_string(
         "publi/publicaciones",
         nombre_de_archivo,
-        json.dumps(almacenable)
+        json.dumps(pub)
     )
     return datos
 
@@ -55,7 +55,7 @@ def get_publi(publication_id = None):
         return [
            i
            for i in query_result["content"]
-           if id_noticia in i
+           if publication_id in i
         ]
         print("Done")
 
