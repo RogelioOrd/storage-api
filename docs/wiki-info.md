@@ -125,11 +125,14 @@ Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con
 
 
 #Casos de Uso
+
 ##Caso 1: Agregar un usuario
 Esta funcion servira para crear usuarios en los que pedira informacion como nombre, contraseña, correo y algunos otros datos para poder guardarlo
 
+
 ### Estructura del CURL
 '''
+
 Add a new user
 Para probar esta ruta uno puede ejecutar el siguiente comando
 
@@ -139,9 +142,15 @@ Para probar esta ruta uno puede ejecutar el siguiente comando
           -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "mail" : "tucorreofake@correo.com"}'
 
   '''
+
+
 ##Caso 2: Crear una wiki
 Esta funcion servira para crear las respectivas wikis en los que pedira informacion como el titulo, categoria e incluso referencias para guardar la informacion.
+
+
 ### Estructura del CURL
+
+
 '''
 Añadir una Wiki
 curl http://localhost:8081/wikiinfo/store \
@@ -149,9 +158,15 @@ curl http://localhost:8081/wikiinfo/store \
 -H 'Content-Type: application/json'  \
 -d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
 '''
+
+
 ##Caso 3: Consultar usuarios
 Con esta función se plantea que podamos buscar a los usuarios con alguno de los siguientes parametros: 'id'.
+
+
 ### Estructura del CURL
+
+
 '''
 Ver Usuarios
 curl http://localhost:8081/wikiinfo/store/1/rogelio \
@@ -160,7 +175,11 @@ curl http://localhost:8081/wikiinfo/store/1/rogelio \
 
 ##Caso 4: Consultar Wikis
 Con esta función se plantea que podamos buscar a los usuarios con alguno de los siguientes parametros: 'publication_id'.
+
+
 ### Estructura del CURL
+
+
 '''
 ver wikis
 curl http://localhost:8081/wikiinfo/1 \
