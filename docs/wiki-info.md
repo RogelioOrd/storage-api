@@ -192,6 +192,30 @@ Con esta función se plantea que podamos buscar a los usuarios con alguno de los
 
 '''
 
+# Planeacion del frontend
+
+Para la planeacion que se llevara a cabo para poder realizar el forntend se debe llevar a cabo un analizis de las funcionalidades que se tienen para desarrollarlas y que el frontend corresponda al backend, todo lo del forntend se realizara utilizando html, JS y CSS que le dara el aspecto mejor a la vista al proyecto.
+
+Para que el forntend funcione debe cumplir ciertas caracteristicas, como:
+- Se deben poder realizar las consultas respectivas como POST o GET.
+- Que las funciones trabajen correctamente
+
+Para la pagia principal se tiene esto pensado
+Primero se necesitara una pagina principal desde donde se pueda acceder al resto de las paginas, wikis y pues consultar las respectivas wikis.
+<img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0002-Home%20Page.PNG" width="550">
+
+Luego al seleccionar la wiki que se desea acceder, se mostrara una pagina en la que se tendra la informacion de manera que se centre en eso y lo demas sean solo ventanas para o herramientas para poder acceder a otra consulta de informacion.
+
+<img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0004-Publication.PNG" width="550">
+
+Para agregar una wiki
+La imagen muestra unos campos para agregar una nueva wiki al sistema.. Al final se encuentra un boton de publish, el cual sirve para guardar los cambios.
+En esto podemos ver desde una vista previa como se plantea que se suban o se generen las wikis con sus respectivos campos que cumpliran ciertos requisitos para que funcione con el backend
+<img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0003-Publication%20Preview.PNG" width="550">
+
+Perfiles
+Por ultimo se desea poder visitar la pagina de los distintos autores/usuarios que se tengan registrados para saber que es lo que han hecho asi como se acomodaran de forma que sea mas sencillo acceder a esa Informacion
+<img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0001-UserProfile.PNG" width="550">
 ## Herramientas Utilizadas
 * [Python](https://www.python.org)
 * [PIP](https://pip.pypa.io/en/stable/installing/)
