@@ -154,10 +154,10 @@ Esta funcion servira para crear las respectivas wikis en los que pedira informac
 '''
 
 Añadir una Wiki
-curl http://localhost:8081/wikiinfo/store \
--X POST \
--H 'Content-Type: application/json'  \
--d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
+  curl http://localhost:8081/wikiinfo/store \
+    -X POST \
+      -H 'Content-Type: application/json'  \
+      -d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
 
 '''
 
@@ -172,8 +172,8 @@ Con esta función se plantea que podamos buscar a los usuarios con alguno de los
 '''
 
 Ver Usuarios
-curl http://localhost:8081/wikiinfo/store/1/rogelio \
--X GET \
+  curl http://localhost:8081/wikiinfo/store/1/rogelio \
+    -X GET \
 
 '''
 
@@ -186,9 +186,9 @@ Con esta función se plantea que podamos buscar a los usuarios con alguno de los
 
 '''
 
-ver wikis
-curl http://localhost:8081/wikiinfo/1 \
--X GET \
+  ver wikis
+    curl http://localhost:8081/wikiinfo/1 \
+    -X GET \
 
 '''
 
