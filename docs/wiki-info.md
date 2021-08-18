@@ -77,10 +77,8 @@ Como ingresar una wiki
 
 | Path                    | Descripción                                         |
 | ----------------------- | --------------------------------------------------- |
-| /wiki-info/login             | Sera el archivo encargado de validar el acceso al usuario para permitirle subir informacion |
-| /wiki-info/profile           | Aqui se desplegra la informacion que el usuario haya publicado |
-| /wiki-info/query             | Aqui es donde se consultara la informacion subida por su titulo|
-| /wiki-info/create/data       | Se utiliza para crear notas|
+| /wikiinfo/storage           | Aqui se desplegra la informacion que el usuario haya publicado |
+| /wikiinfo/store             | Aqui se desplegra la informacion del usuario |
 
 # Creacion de Funciones de almacenamiento
 Funciones simuladas para el funcionamiento
@@ -125,38 +123,6 @@ Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con
 
   <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0001-UserProfile.PNG" width="550">
 
-
-# Cambios de git
-
-```
-17f72c241a48419c00a731ab04746ca5bac0b7b0
-  -Update de Archivos
-  -Upload de la primer version del md
-
-17f72c241a48419c00a731ab04746ca5bac0b7b0
-  -Creacion de Archivos
-  -creacion de carpetas
-
-84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137
-  -Se añadieron las imagenes de los mock ups
-
-2e6ba9a3127933291f598ea7d24ab15edcb059a6
-  -Se añadieron los mock ups al documento
-  -Se les añadio descripcion a los mock ups
-
-dc8b0d8f1089150eada0eda61a7141d525c45beb
-  -Respuesta de creacion
-
-24ad4b6feeac11c62a07a987a55a4ef330221f4c
-  -update de la tabla de Funciones
-
-1c43e307ebd25418016e98920926665e80179fc9
-  -se añadio una tabla de una simulacion de una funcion
-
-644d313cfc1caa5bc7cab63a3e5a979311171d2d
-  -ultima correccion de la interfaz
-
-```
 
 ## Herramientas Utilizadas
 * [Python](https://www.python.org)
