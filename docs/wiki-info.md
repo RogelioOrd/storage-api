@@ -124,9 +124,9 @@ Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con
   <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0001-UserProfile.PNG" width="550">
 
 
-#Casos de Uso
+# Casos de Uso
 
-##Caso 1: Agregar un usuario
+## Caso 1: Agregar un usuario
 Esta funcion servira para crear usuarios en los que pedira informacion como nombre, contraseña, correo y algunos otros datos para poder guardarlo
 
 
@@ -144,7 +144,7 @@ Para probar esta ruta uno puede ejecutar el siguiente comando
   '''
 
 
-##Caso 2: Crear una wiki
+## Caso 2: Crear una wiki
 Esta funcion servira para crear las respectivas wikis en los que pedira informacion como el titulo, categoria e incluso referencias para guardar la informacion.
 
 
@@ -160,7 +160,7 @@ curl http://localhost:8081/wikiinfo/store \
 '''
 
 
-##Caso 3: Consultar usuarios
+## Caso 3: Consultar usuarios
 Con esta función se plantea que podamos buscar a los usuarios con alguno de los siguientes parametros: 'id'.
 
 
@@ -173,7 +173,7 @@ curl http://localhost:8081/wikiinfo/store/1/rogelio \
 -X GET \
 '''
 
-##Caso 4: Consultar Wikis
+## Caso 4: Consultar Wikis
 Con esta función se plantea que podamos buscar a los usuarios con alguno de los siguientes parametros: 'publication_id'.
 
 
