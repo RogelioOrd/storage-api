@@ -49,7 +49,7 @@ def add_publi(publication_id = None, titulo = None, autor = None, categoria = No
 #    return print(publi)
 def get_publi(publication_id = None):
     query_result = query_storage(
-        "wiki/wikis",
+        "publi/publicaciones",
     )
     if publication_id is not None:
         return [
