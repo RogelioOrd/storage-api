@@ -219,6 +219,7 @@ Perfiles
 Por ultimo se desea poder visitar la pagina de los distintos autores/usuarios que se tengan registrados para saber que es lo que han hecho asi como se acomodaran de forma que sea mas sencillo acceder a esa Informacion.
 
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0001-UserProfile.PNG" width="550">
+
 ## Herramientas Utilizadas
 * [Python](https://www.python.org)
 * [PIP](https://pip.pypa.io/en/stable/installing/)
