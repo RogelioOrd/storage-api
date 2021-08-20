@@ -150,11 +150,11 @@ Esta funcion servira para crear las respectivas wikis en los que pedira informac
 ### Estructura del CURL
 '''
 
-Añadir una Wiki
-  curl http://localhost:8081/wikiinfo/store \
-    -X POST \
-      -H 'Content-Type: application/json'  \
-      -d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
+  Añadir una Wiki
+    curl http://localhost:8081/wikiinfo/store \
+        -X POST \
+        -H 'Content-Type: application/json'  \
+        -d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" ,  "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
 
 '''
 
@@ -166,9 +166,9 @@ Con esta función se plantea que podamos buscar a los usuarios con alguno de los
 ### Estructura del CURL
 '''
 
-Ver Usuarios
-  curl http://localhost:8081/wikiinfo/store/1/rogelio \
-    -X GET \
+  Ver Usuarios
+    curl http://localhost:8081/wikiinfo/store/1/rogelio \
+        -X GET \
 
 '''
 
@@ -180,9 +180,9 @@ Con esta función se plantea que podamos buscar a los usuarios con alguno de los
 ### Estructura del CURL
 '''
 
-  ver wikis
+  Ver wikis
     curl http://localhost:8081/wikiinfo/1 \
-    -X GET \
+      -X GET \
 
 '''
 
