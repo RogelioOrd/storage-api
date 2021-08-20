@@ -132,12 +132,14 @@ Esta funcion servira para crear usuarios en los que pedira informacion como nomb
 
 ### Estructura del CURL
 '''
+
     Add a new user
     Para probar esta ruta uno puede ejecutar el siguiente comando
       curl http://localhost:8081/wikiinfo/store \
           -X POST \
           -H 'Content-Type: application/json' \
           -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "mail" : "tucorreofake@correo.com"}'
+
   '''
 
 
@@ -147,11 +149,13 @@ Esta funcion servira para crear las respectivas wikis en los que pedira informac
 
 ### Estructura del CURL
 '''
+
 Añadir una Wiki
   curl http://localhost:8081/wikiinfo/store \
     -X POST \
       -H 'Content-Type: application/json'  \
       -d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
+
 '''
 
 
@@ -161,9 +165,11 @@ Con esta función se plantea que podamos buscar a los usuarios con alguno de los
 
 ### Estructura del CURL
 '''
+
 Ver Usuarios
   curl http://localhost:8081/wikiinfo/store/1/rogelio \
     -X GET \
+
 '''
 
 
@@ -173,9 +179,11 @@ Con esta función se plantea que podamos buscar a los usuarios con alguno de los
 
 ### Estructura del CURL
 '''
+
   ver wikis
     curl http://localhost:8081/wikiinfo/1 \
     -X GET \
+
 '''
 
 # Planeacion del frontend
