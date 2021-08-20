@@ -101,7 +101,7 @@ Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con
 
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0002-Home%20Page.PNG" width="550">  
 
--Vista previa de una publicacion
+- Vista previa de una publicacion
 * Aqui se rellenara la informacion que se desee agregar o publicar
 * Mostrara una seccion donde se podra acceder a la bibliografia
 * Se podra ver la fecha de publicacion
@@ -109,14 +109,14 @@ Se agrego codigo de respuesta de creacion not implemnted que responde a 501, con
 
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0003-Publication%20Preview.PNG" width="550">  
 
--Publication
+- Publication
 * Aqui se puede ver principalmente la publicacion que se busco
 * Asi mismo se añadira un enlace al perfil del autor para buscar mas de sus publicaciones
 * Se tendra una barra de buscqueda para poder cambiar de Informacion
 
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0004-Publication.PNG" width="550">
 
--Perfil del Autor
+- Perfil del Autor
 * Se tendra acceso a las publicaciones del autor
 * Se tendra tambien la barra de busqueda
 * Si la persona se encuentra en su perfil tendra permisos de editar
@@ -132,15 +132,12 @@ Esta funcion servira para crear usuarios en los que pedira informacion como nomb
 
 ### Estructura del CURL
 '''
-
-Add a new user
-Para probar esta ruta uno puede ejecutar el siguiente comando
-
+    Add a new user
+    Para probar esta ruta uno puede ejecutar el siguiente comando
       curl http://localhost:8081/wikiinfo/store \
           -X POST \
           -H 'Content-Type: application/json' \
           -d '{"id" : "1" , "username" : "rogelio" , "password" : "1234" , "mail" : "tucorreofake@correo.com"}'
-
   '''
 
 
@@ -149,16 +146,12 @@ Esta funcion servira para crear las respectivas wikis en los que pedira informac
 
 
 ### Estructura del CURL
-
-
 '''
-
 Añadir una Wiki
   curl http://localhost:8081/wikiinfo/store \
     -X POST \
       -H 'Content-Type: application/json'  \
       -d '{"publication_id" : "1" , "titulo" : "titulo Random" , "autor" : "rogelio" , "categoria" : "ciencia" , "fecha":"2021-01-01" , "publication" : "contenido de la publicacion", "bibliografia" : "fuentes de informacion"}' \
-
 '''
 
 
@@ -167,58 +160,71 @@ Con esta función se plantea que podamos buscar a los usuarios con alguno de los
 
 
 ### Estructura del CURL
-
-
 '''
-
 Ver Usuarios
   curl http://localhost:8081/wikiinfo/store/1/rogelio \
     -X GET \
-
 '''
+
 
 ## Caso 4: Consultar Wikis
 Con esta función se plantea que podamos buscar a los usuarios con alguno de los siguientes parametros: 'publication_id'.
 
 
 ### Estructura del CURL
-
-
 '''
-
   ver wikis
     curl http://localhost:8081/wikiinfo/1 \
     -X GET \
-
 '''
 
 # Planeacion del frontend
-
 Para la planeacion que se llevara a cabo para poder realizar el forntend se debe llevar a cabo un analizis de las funcionalidades que se tienen para desarrollarlas y que el frontend corresponda al backend, todo lo del forntend se realizara utilizando html, JS y CSS que le dara el aspecto mejor a la vista al proyecto.
 
 Para que el forntend funcione debe cumplir ciertas caracteristicas, como:
 - Se deben poder realizar las consultas respectivas como POST o GET.
 - Que las funciones trabajen correctamente
 
-Para la pagia principal se tiene esto pensado
-Primero se necesitara una pagina principal desde donde se pueda acceder al resto de las paginas, wikis y pues consultar las respectivas wikis.
+## Pagina Principal.
+- Para la pagia principal se tiene esto pensado
+- Primero se necesitara una pagina principal desde donde se pueda acceder al resto de las paginas, wikis y pues consultar las respectivas wikis.
+- Se plantea que aqui se pueda buscar desde el buscador ya sea por titulo, id o autor.
+- Asi como se plantea que este una seccion en el que se pueda buscar por categorias.
 
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0002-Home%20Page.PNG" width="550">
 
+## Wikis Vista.
 Luego al seleccionar la wiki que se desea acceder, se mostrara una pagina en la que se tendra la informacion de manera que se centre en eso y lo demas sean solo ventanas para o herramientas para poder acceder a otra consulta de informacion.
 
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0004-Publication.PNG" width="550">
 
-Para agregar una wiki
+## Para agregar una wiki.
 La imagen muestra unos campos para agregar una nueva wiki al sistema.. Al final se encuentra un boton de publish, el cual sirve para guardar los cambios.
 En esto podemos ver desde una vista previa como se plantea que se suban o se generen las wikis con sus respectivos campos que cumpliran ciertos requisitos para que funcione con el backend.
 
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0003-Publication%20Preview.PNG" width="550">
 
-Perfiles
+## Perfiles.
 Por ultimo se desea poder visitar la pagina de los distintos autores/usuarios que se tengan registrados para saber que es lo que han hecho asi como se acomodaran de forma que sea mas sencillo acceder a esa Informacion.
+Se planea que en esta ventana o seccion se pueda acceder a la informacion de que es lo que ha publicado cierto actor poder tambien buscar desde ahi.
+Asi mismo se tendra una barra de busqueda para  
 
 <img src="https://github.com/RogelioOrd/storage-api/blob/84f77a1f9f0bc2bc1b10001cc2d3765cb53e0137/docs/assets/wiki-info-0001-UserProfile.PNG" width="550">
+
+# Documentacion para continuar el trabajo.
+- Reparar las rutas del proyecto ya que se tiene algunos conflictos en el almacenamiento por partes de las funciones.
+
+- Reparar las funciones post para que almacene la informacion y no tenga conflictos
+
+- Reparar la funcion de post para crear wikis debido a un error que me indica que los metodos utilizados no son validos
+
+- Desarrollar de mejor manera las funciones get para poder ver los datos almacenados
+
+- Verificar los errores en las rutas para descartarlos y avanzar
+
+- Desarrollar los curl de manera correcta para poder obtener la informacion necesaria
+
+- Desarrollar los curl para poder publicar la informacion necesaria
 
 ## Herramientas Utilizadas
 * [Python](https://www.python.org)
